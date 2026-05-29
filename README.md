@@ -50,5 +50,5 @@ Initialize your build environment according to standard Android 12 / LineageOS 1
 Initialize the repository using the AEDS manifest local manifests to pull the stripped frameworks:
 
 ```bash
-repo init -u [https://github.com/AEDS-Project/android_manifest.git](https://github.com/AEDS-Project/android_manifest.git) -b aeds-12.1
+repo init -u [https://github.com/Android-Extended-Device-Support/android_manifest.git](https://github.com/AEDS-Project/android_manifest.git) -b aeds-12.1
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
