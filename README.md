@@ -35,7 +35,7 @@ AEDS utilizes a hybrid architecture—leveraging the robust hardware compatibili
 | Included Clean & Fast | Stripped / Removed |
 | :--- | :--- |
 | Minimalist AOSP UI | Google Play Services / GMS (Optional via Flash) |
-| Core Essential Apps (Dialer, SMS, Files) | LineageOS SDK Extra UI Tweaks & Custom Themes |
+| Core Essential Apps (Dialer, SMS, Files) | Stock Android UI without Goggle Services|
 | ANPS Management Engine | Background Telemetry & Analytics (`LineageStats`, etc.) |
 | Upstream Android 12 Security Patches | Heavy App Animations & Window Blurs |
 
