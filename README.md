@@ -4,7 +4,7 @@ Android Extended Device Support (AEDS) is a custom, lightweight Android ROM desi
 
 ---
 
-## 🚀 Core Objectives
+## Core Objectives
 
 * **Ultra-Optimized for Legacy Hardware:** Specifically tuned for devices with limited CPU clusters and low RAM (1GB - 3GB).
 * **True Android Go Integration:** Native enforcement of low-RAM behaviors to minimize the overall system footprint.
@@ -13,25 +13,16 @@ Android Extended Device Support (AEDS) is a custom, lightweight Android ROM desi
 
 ---
 
-## 🛠️ Technical Architecture & Custom Enhancements
+## Technical Architecture & Custom Enhancements
 
 AEDS utilizes a hybrid architecture—leveraging the robust hardware compatibility layer of LineageOS while aggressively modifying the core AOSP framework.
-
-### 🧠 AEDS Notification Policy System (ANPS)
-ANPS is a custom, built-in framework policy engine that replaces standard background management. It intercepts system services to categorize apps into strict performance tiers:
-
-* **Tier 0 (System Critical):** Core OS processes, critical input/output. Unthrottled.
-* **Tier 1 (Communication):** Essential user-selected messaging/dialer apps. Real-time delivery.
-* **Tier 2 (User Apps):** Standard user-installed applications. Throttled when backgrounded.
-* **Tier 3 (Passive/Background-Heavy):** Aggressively batched syncs and restricted background CPU time.
-* **Tier 4 (Restricted):** No background execution, zero wakeups allowed.
 
 #### Framework Hook Points:
 * `NotificationManagerService`: Automatic importance downgrading for low-priority tiers to prevent rendering overhead.
 * `AlarmManagerService` & `JobSchedulerService`: Deep batching and deferral of background wakeups.
 * `AppStandbyController`: Direct enforcement of restricted standby buckets upon app focus loss.
 
-### ⚡ Memory & Graphics Optimizations
+### Memory & Graphics Optimizations
 * **Low RAM Enforcement:** `ro.config.low_ram=true` enabled globally to optimize memory allocations, simplify the Recents panel, and disable heavy multi-window processes.
 * **Aggressive LMKD:** Low Memory Killer Daemon retuned via `PSI` (Process Stall Information) to eliminate UI stuttering caused by memory thrashing.
 * **Zero-Blur UI:** Translucencies and background blurs are explicitly disabled (`ro.sf.blurs_are_expensive=1`) to drastically reduce GPU overdraw.
@@ -39,7 +30,7 @@ ANPS is a custom, built-in framework policy engine that replaces standard backgr
 
 ---
 
-## 📦 What's Included (And What's Not)
+## What's Included (And What's Not)
 
 | Included Clean & Fast | Stripped / Removed |
 | :--- | :--- |
@@ -50,7 +41,7 @@ ANPS is a custom, built-in framework policy engine that replaces standard backgr
 
 ---
 
-## 🏗️ How to Build
+## How to Build
 
 ### 1. Environment Setup
 Initialize your build environment according to standard Android 12 / LineageOS 19.1 prerequisites. 
