@@ -1,6 +1,6 @@
 # Android Extended Device Support (AEDS)
 
-Android Extended Device Support (AEDS) is a custom, lightweight Android ROM designed specifically to breathe new life into legacy and low-RAM devices. Built on top of an optimized **Android 12 (LineageOS 19.1 / Android Go)** base, AEDS eliminates modern OS bloat, strips background telemetry, and introduces custom framework-level optimizations to prioritize frame-pacing, low latency, and battery longevity over flashy aesthetics.
+Android Extended Device Support (AEDS) is a custom, lightweight Android ROM designed specifically to breathe new life into legacy and low-RAM devices. Built on top of an optimized **Android 12/13 (Android Go)** base, AEDS eliminates modern OS bloat, strips background telemetry, and introduces custom framework-level optimizations to prioritize frame-pacing, low latency, and battery longevity over flashy aesthetics.
 
 ---
 
